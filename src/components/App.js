@@ -28,16 +28,30 @@ const GreetingComponent = () => {
         value={name}
         onChange={handleChange}
         placeholder="Type your name..."
-        style={{ padding: "10px", fontSize: "16px" }}
+        style={{
+          padding: "10px",
+          fontSize: "16px",
+          borderRadius: "5px",
+          border: "1px solid #ccc",
+        }}
       />
       <button
         onClick={handleSubmit}
-        style={{ marginLeft: "10px", padding: "10px", fontSize: "16px" }}
+        style={{
+          marginLeft: "10px",
+          padding: "10px 15px",
+          fontSize: "16px",
+          borderRadius: "5px",
+          backgroundColor: "#007bff",
+          color: "#fff",
+          border: "none",
+          cursor: "pointer",
+        }}
       >
         Submit
       </button>
-      {error && <p style={{ color: "red" }}>{error}</p>}
-      {greeting && <h3>{greeting}</h3>}
+      {error && <p style={{ color: "red", marginTop: "10px" }}>{error}</p>}
+      {greeting && <h3 style={{ marginTop: "10px" }}>{greeting}</h3>}
     </div>
   );
 };
