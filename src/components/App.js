@@ -12,7 +12,7 @@ const GreetingApp = () => {
         value={name}
         onChange={(e) => setName(e.target.value)}
       />
-      <p>{name.trim() ? `Hello, ${name}!` : ""}</p>
+      <p>{name.trim() ? `Hello ${name}!` : " "}</p>
     </div>
   );
 };
